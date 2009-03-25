@@ -32,18 +32,21 @@ you think the person in the photo greatly possesses the quality listed, and low
 ratings mean you think the person does not. Try not to overthink your ratings.</p>
 
 <p>Step {{ step }} of {{ step_count }}</p>
+
 <form action="." method="post">
+{{ form.management_form }}
 <table>
+{% for f in form.forms %}        
     <tr>
-        <th colspan="2">{{ form.i }}</th>
+        <th colspan="2"><br /><br />{{ f.i }}</th>
     </tr>
     <tr>
         <th></th>
         <th><div style="float: right;">Higher</div><div style="float: left;">Lower</div></th>
     </tr>
-    <tr{% if form.p1.errors %} class="required"{% endif %}>
-        <td>{{ form.p1.label }}</td>
-        <td>{{ form.p1 }}</td>
+    <tr{% if f.p1.errors %} class="required"{% endif %}>
+        <td>{{ f.p1.label }}</td>
+        <td>{{ f.p1 }}</td>
     </tr>
 <!--    <tr{% if form.a.errors %} class="required"{% endif %}>
         <td>{{ form.a.label }}</td>
@@ -57,6 +60,7 @@ ratings mean you think the person does not. Try not to overthink your ratings.</
         <td>{{ form.p3.label }}</td>
         <td>{{ form.p3 }}</td>
     </tr>    -->
+{% endfor %}    
 </table>
 <input type="hidden" name="{{ step_field }}" value="{{ step0 }}" />
 {{ previous_fields|safe }}

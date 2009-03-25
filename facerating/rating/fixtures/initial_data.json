@@ -1,0 +1,1142 @@
+[
+  {
+    "pk": 25, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_logentry", 
+      "name": "Can add log entry", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 26, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_logentry", 
+      "name": "Can change log entry", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_logentry", 
+      "name": "Can delete log entry", 
+      "content_type": 9
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_group", 
+      "name": "Can add group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_message", 
+      "name": "Can add message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_permission", 
+      "name": "Can add permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_user", 
+      "name": "Can add user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_group", 
+      "name": "Can change group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_message", 
+      "name": "Can change message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_permission", 
+      "name": "Can change permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_user", 
+      "name": "Can change user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_group", 
+      "name": "Can delete group", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_message", 
+      "name": "Can delete message", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_permission", 
+      "name": "Can delete permission", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_user", 
+      "name": "Can delete user", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_contenttype", 
+      "name": "Can add content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_contenttype", 
+      "name": "Can change content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_contenttype", 
+      "name": "Can delete content type", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_flatpage", 
+      "name": "Can add flat page", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_flatpage", 
+      "name": "Can change flat page", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_flatpage", 
+      "name": "Can delete flat page", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 49, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_accesscode", 
+      "name": "Can add access code", 
+      "content_type": 17
+    }
+  }, 
+  {
+    "pk": 46, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_demographics", 
+      "name": "Can add demographics", 
+      "content_type": 16
+    }
+  }, 
+  {
+    "pk": 37, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_featurescriteria", 
+      "name": "Can add features criteria", 
+      "content_type": 13
+    }
+  }, 
+  {
+    "pk": 40, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_information", 
+      "name": "Can add information", 
+      "content_type": 14
+    }
+  }, 
+  {
+    "pk": 43, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_racialbackground", 
+      "name": "Can add racial background", 
+      "content_type": 15
+    }
+  }, 
+  {
+    "pk": 34, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_ratingresponse", 
+      "name": "Can add rating response", 
+      "content_type": 12
+    }
+  }, 
+  {
+    "pk": 31, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_similarityresponse", 
+      "name": "Can add similarity response", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_submission", 
+      "name": "Can add submission", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 50, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_accesscode", 
+      "name": "Can change access code", 
+      "content_type": 17
+    }
+  }, 
+  {
+    "pk": 47, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_demographics", 
+      "name": "Can change demographics", 
+      "content_type": 16
+    }
+  }, 
+  {
+    "pk": 38, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_featurescriteria", 
+      "name": "Can change features criteria", 
+      "content_type": 13
+    }
+  }, 
+  {
+    "pk": 41, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_information", 
+      "name": "Can change information", 
+      "content_type": 14
+    }
+  }, 
+  {
+    "pk": 44, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_racialbackground", 
+      "name": "Can change racial background", 
+      "content_type": 15
+    }
+  }, 
+  {
+    "pk": 35, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_ratingresponse", 
+      "name": "Can change rating response", 
+      "content_type": 12
+    }
+  }, 
+  {
+    "pk": 32, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_similarityresponse", 
+      "name": "Can change similarity response", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 29, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_submission", 
+      "name": "Can change submission", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 51, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_accesscode", 
+      "name": "Can delete access code", 
+      "content_type": 17
+    }
+  }, 
+  {
+    "pk": 48, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_demographics", 
+      "name": "Can delete demographics", 
+      "content_type": 16
+    }
+  }, 
+  {
+    "pk": 39, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_featurescriteria", 
+      "name": "Can delete features criteria", 
+      "content_type": 13
+    }
+  }, 
+  {
+    "pk": 42, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_information", 
+      "name": "Can delete information", 
+      "content_type": 14
+    }
+  }, 
+  {
+    "pk": 45, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_racialbackground", 
+      "name": "Can delete racial background", 
+      "content_type": 15
+    }
+  }, 
+  {
+    "pk": 36, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_ratingresponse", 
+      "name": "Can delete rating response", 
+      "content_type": 12
+    }
+  }, 
+  {
+    "pk": 33, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_similarityresponse", 
+      "name": "Can delete similarity response", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 30, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_submission", 
+      "name": "Can delete submission", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_session", 
+      "name": "Can add session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_session", 
+      "name": "Can change session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_session", 
+      "name": "Can delete session", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_site", 
+      "name": "Can add site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_site", 
+      "name": "Can change site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_site", 
+      "name": "Can delete site", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "auth.group", 
+    "fields": {
+      "name": "Proctors", 
+      "permissions": [
+        49, 
+        50, 
+        51
+      ]
+    }
+  }, 
+  {
+    "pk": 1,
+    "model": "rating.accesscode",
+    "fields": {
+      "code": "test",
+      "valid_until": "2009-12-31"
+    }
+  },
+  {
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "admin", 
+      "first_name": "Admin", 
+      "last_name": "Admin", 
+      "is_active": true, 
+      "is_superuser": true, 
+      "is_staff": true, 
+      "last_login": "2009-01-22 17:00:50", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "sha1$bc241$8bc918c29c4d1e313ca858bb1218b6c268b53961", 
+      "email": "admin@example.com", 
+      "date_joined": "2008-12-10 18:43:26"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "knab2ar", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2009-01-22 17:02:44", 
+      "groups": [], 
+      "user_permissions": [
+        7, 
+        8, 
+        49, 
+        50, 
+        47, 
+        41, 
+        35, 
+        32, 
+        29, 
+        51, 
+        48, 
+        42, 
+        36, 
+        33, 
+        30
+      ], 
+      "password": "x", 
+      "email": "", 
+      "date_joined": "2009-01-22 15:32:21"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "arialemj", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2009-01-22 16:14:19", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "x", 
+      "email": "", 
+      "date_joined": "2009-01-22 16:14:19"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "castr2cm", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2009-01-22 17:00:28", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "x", 
+      "email": "", 
+      "date_joined": "2009-01-22 16:14:29"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "eatonka", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2009-01-22 16:14:34", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "x", 
+      "email": "", 
+      "date_joined": "2009-01-22 16:14:34"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "ressinab", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2009-01-22 16:14:40", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "x", 
+      "email": "", 
+      "date_joined": "2009-01-22 16:14:40"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "shinozhr", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2009-01-22 16:14:47", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "x", 
+      "email": "", 
+      "date_joined": "2009-01-22 16:14:47"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "vandercx", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2009-01-22 16:14:52", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "x", 
+      "email": "", 
+      "date_joined": "2009-01-22 16:14:52"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "tuazonve", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2009-01-22 16:14:57", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "x", 
+      "email": "", 
+      "date_joined": "2009-01-22 16:14:57"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "vittld", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2009-01-22 16:15:03", 
+      "groups": [
+        1
+      ], 
+      "user_permissions": [], 
+      "password": "x", 
+      "email": "", 
+      "date_joined": "2009-01-22 16:15:03"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "leemr", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": false, 
+      "is_staff": true, 
+      "last_login": "2009-01-22 16:20:43", 
+      "groups": [], 
+      "user_permissions": [
+        7, 
+        8, 
+        49, 
+        50, 
+        47, 
+        41, 
+        35, 
+        32, 
+        29, 
+        51, 
+        48, 
+        42, 
+        36, 
+        33, 
+        30
+      ], 
+      "password": "x", 
+      "email": "", 
+      "date_joined": "2009-01-22 16:20:43"
+    }
+  }, 
+ {
+    "pk": 1, 
+    "model": "rating.featurescriteria", 
+    "fields": {
+      "group": "f", 
+      "criteria": "Cheekbone structure"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Ear protrusion"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Ear shape"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Ear size"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Eye color"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Eye shape"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Eyes; distance between them"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Eyes; height"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Facial hair"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Hair color"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Hairstyle"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Hair texture"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "How small the person's facial features (eyes, nose, and mouth) are"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "How well vertically aligned the facial features were"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Jawbone protrusion"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Makeup; style of makeup"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Nose shape"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Nose size"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Skin color"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Style of eyeglasses"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Whether or not the person wore eyeglasses"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "f",
+      "criteria": "Whether or not the person wore a headband or headscarf"
+    }
+  },
+    {
+    "pk": 23,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "Illumination (brightness) of the photo"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "Gender of the person in the photo"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "How old you think the person is"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "How the faces looked compared to Asian American people/friends you know"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "How the faces looked compared to Asian Americans you have seen in the media"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "How these faces looked compared to Asian Americans you have dated"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "How much the faces looked like you"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "How many Asian Americans lived in your neighborhood"
+    }
+  },
+  {
+    "pk": 31,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "How many Asian Americans attended the schools you attended"
+    }
+  },
+  {
+    "pk": 32,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "How racially segregated your hometown neighborhood was"
+    }
+  },
+  {
+    "pk": 33,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "What your parents told you a prototypical \"Asian American\" looked like"
+    }
+  },
+  {
+    "pk": 34,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "What your friends told you a prototypical \"Asian American\" looked like"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "What textbooks have told you a prototypical \"Asian American\" looked like"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "x",
+      "criteria": "Other criteria (please specify)"
+    }
+  },
+  {
+    "pk": 1,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Chinese"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Korean"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Japanese"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Vietnamese"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Indian"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Indonesian"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Cambodian"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Thai"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Lao"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Hmong"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Filipino/a"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Bangladeshi"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Pakistani"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Other Asian (please specify)"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "African-American"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Hispanic or Latino/a"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Non-Hispanic White"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "rating.racialbackground",
+    "fields": {
+      "background": "Other (please specify)"
+    }
+  }
+]
+
