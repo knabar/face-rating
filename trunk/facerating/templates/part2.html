@@ -32,19 +32,24 @@ ratings mean you think the faces are highly similar, and low ratings mean you
 think the faces are highly dissimilar. Try not to overthink your ratings.</p>
 
 <p>Step {{ step }} of {{ step_count }}</p>
+
+
 <form action="." method="post">
+{{ form.management_form }}
 <table>
+{% for f in form.forms %} 
     <tr>
-        <th colspan="2">{{ form.i1 }}{{ form.i2 }}</th>
+        <th colspan="2"><br /><br />{{ f.i1 }}{{ f.i2 }}</th>
     </tr>
     <tr>
         <th></th>
         <th><div style="float: right;">Higher</div><div style="float: left;">Lower</div></th>
     </tr>
     <tr{% if form.s.errors %} class="required"{% endif %}>
-        <td>{{ form.s.label }}</td>
-        <td>{{ form.s }}</td>
+        <td>{{ f.s.label }}</td>
+        <td>{{ f.s }}</td>
     </tr>
+{% endfor %}
 </table>
 <input type="hidden" name="{{ step_field }}" value="{{ step0 }}" />
 {{ previous_fields|safe }}

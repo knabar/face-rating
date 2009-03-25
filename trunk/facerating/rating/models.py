@@ -42,9 +42,10 @@ class RatingResponse(models.Model):
 #    prototypicality_am = models.PositiveSmallIntegerField()
     
     def __unicode__(self):
-        return "Sub %s Face %s AsAm %s Attr %s As %s Am %s" % (self.submission_id, self.face,
-                                                               self.prototypicality_asam, self.attractiveness,
-                                                               self.prototypicality_as, self.prototypicality_am)
+        return "Sub %s Face %s AsAm %s" % (self.submission_id, self.face, self.prototypicality_asam)
+        #return "Sub %s Face %s AsAm %s Attr %s As %s Am %s" % (self.submission_id, self.face,
+        #                                                       self.prototypicality_asam, self.attractiveness,
+        #                                                       self.prototypicality_as, self.prototypicality_am)
 
 
 class FeaturesCriteria(models.Model):

@@ -181,14 +181,17 @@ def download_csvs(request):
     def submission_rows():
         for s in submissions:
             yield [s] + submissions[s]            
-    add_file("participants.csv", "Submission User Date Progress".split(), submission_rows())
+    add_file("participants.csv", "Submission User Email Date Progress".split(), submission_rows())
         
     # rating
     def rating_rows():
         for r in RatingResponse.objects.all():
+#            yield [r.submission_id, submissions[r.submission_id][0], r.face,
+#                   r.prototypicality_asam, r.attractiveness, r.prototypicality_as, r.prototypicality_am]
             yield [r.submission_id, submissions[r.submission_id][0], r.face,
-                   r.prototypicality_asam, r.attractiveness, r.prototypicality_as, r.prototypicality_am]
-    add_file("ratings.csv", "Submission User Face Prot_AsAm Attr Prot_As Prot_Am".split(), rating_rows())
+                   r.prototypicality_asam]
+    #add_file("ratings.csv", "Submission User Face Prot_AsAm Attr Prot_As Prot_Am".split(), rating_rows())
+    add_file("ratings.csv", "Submission User Face Prot_AsAm".split(), rating_rows())
     
     # similarity
     def similarity_rows():
@@ -221,23 +224,40 @@ def download_csvs(request):
             background = d.background.all().values_list('id', flat=True)
             r = r + map(lambda i: i[0] in background and i[1], rb)
             r = r + [d.background_other, d.background_mother, d.background_father, d.generation_status,
-                     d.locations, d.hometown_street, d.hometown_city_state, d.hometown_zip_code,
-                     d.hometown_not_us, d.religion, d.religion_community, d.religion_community_ethnic,
+                     d.locations, d.hometown_street, d.hometown_city_state, 
+                     d.hometown_not_us, d.religion,
                      d.friends, d.friends_asian, d.friends_black, d.friends_white, d.friends_latino,
                      d.friends_native_american, d.friends_bi_asian, d.friends_bi_nonasian, d.partners,
                      d.partners_asian, d.partners_black, d.partners_white, d.partners_latino,
                      d.partners_native_american, d.partners_bi_asian, d.partners_bi_nonasian,
-                     d.courses, d.courses_identity]
+                     d.courses]
+            #r = r + [d.background_other, d.background_mother, d.background_father, d.generation_status,
+            #         d.locations, d.hometown_street, d.hometown_city_state, d.hometown_zip_code,
+            #         d.hometown_not_us, d.religion, d.religion_community, d.religion_community_ethnic,
+            #         d.friends, d.friends_asian, d.friends_black, d.friends_white, d.friends_latino,
+            #         d.friends_native_american, d.friends_bi_asian, d.friends_bi_nonasian, d.partners,
+            #         d.partners_asian, d.partners_black, d.partners_white, d.partners_latino,
+            #         d.partners_native_american, d.partners_bi_asian, d.partners_bi_nonasian,
+            #         d.courses, d.courses_identity]
             yield r
     add_file("demographics.csv",
              "Submission User Age Sex Birthplace LivedInUS Adopted".split() +
              map(lambda i: i[1], rb) +
-             "Other Mother Father Generation Locations Street CityState ZIP NotUS \
-             Religion Community EthnicGroup Friends FriendsAsian FriendsBlack FriendsWhite FriendsLatino \
+             "Other Mother Father Generation Locations Street CityState NotUS \
+             Religion Friends FriendsAsian FriendsBlack FriendsWhite FriendsLatino \
              FriendsNativeAmerican FriendsBiAsian FriendsBiNonAsian Partners PartnersAsian \
              PartnersBlack PartnersWhite PartnersLatino PartnersNativeAmerican PartnersBiAsian \
-             PartnersBiNonAsian Courses IdentityCourses".split(),
+             PartnersBiNonAsian Courses".split(),
              demographics_rows())
+    #add_file("demographics.csv",
+    #         "Submission User Age Sex Birthplace LivedInUS Adopted".split() +
+    #         map(lambda i: i[1], rb) +
+    #         "Other Mother Father Generation Locations Street CityState ZIP NotUS \
+    #         Religion Community EthnicGroup Friends FriendsAsian FriendsBlack FriendsWhite FriendsLatino \
+    #         FriendsNativeAmerican FriendsBiAsian FriendsBiNonAsian Partners PartnersAsian \
+    #         PartnersBlack PartnersWhite PartnersLatino PartnersNativeAmerican PartnersBiAsian \
+    #         PartnersBiNonAsian Courses IdentityCourses".split(),
+    #         demographics_rows())
     
     zipfile.close()    
     response = HttpResponse(file.getvalue(), mimetype="application/zip")

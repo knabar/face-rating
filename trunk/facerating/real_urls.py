@@ -16,8 +16,8 @@ urlpatterns = patterns('',
     url(r'^part2/intro/', direct_to_template, {'template': 'part2intro.html'}, name='part2intro'),
     
     url(r'^$', intro, name='intro'),
-    url(r'^part1/', Part1Wizard(2), name='part1'),  # use 1000 to get all
-    url(r'^part2/', Part2Wizard(2), name='part2'),  # use 50
+    url(r'^part1/', Part1Wizard(25), name='part1'),  # use 1000 to get all
+    url(r'^part2/', Part2Wizard(25), name='part2'),  # use 50
     url(r'^part3/', part3, name='part3'),
     url(r'^part4/', part4, name='part4'),
     url(r'^debrief/', direct_to_template, {'template': 'debrief.html'}, name='debrief'),
