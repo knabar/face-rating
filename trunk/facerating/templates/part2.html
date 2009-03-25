@@ -1,0 +1,56 @@
+{% extends "master.html" %}
+{% block title %} - Part 2{% endblock %}
+
+{% block style %}
+li {
+    float: left;
+    list-style-type: none;
+    padding-right: 10px;
+}
+li+li {
+    border-left: solid 1px black;
+    padding-left: 10px;
+}
+.required {
+    color: red;
+}
+label {
+    font-size: xx-large;
+}
+img {
+	height: 200px;
+}
+{% endblock %}
+
+{% block content %}
+
+<h1>Part 2</h1>
+
+<p>For each pair of faces, provide a numerical ranking on the number scale below
+each pair that describes how similar the faces are to each other. Remember, high
+ratings mean you think the faces are highly similar, and low ratings mean you
+think the faces are highly dissimilar. Try not to overthink your ratings.</p>
+
+<p>Step {{ step }} of {{ step_count }}</p>
+<form action="." method="post">
+<table>
+    <tr>
+        <th colspan="2">{{ form.i1 }}{{ form.i2 }}</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th><div style="float: right;">Higher</div><div style="float: left;">Lower</div></th>
+    </tr>
+    <tr{% if form.s.errors %} class="required"{% endif %}>
+        <td>{{ form.s.label }}</td>
+        <td>{{ form.s }}</td>
+    </tr>
+</table>
+<input type="hidden" name="{{ step_field }}" value="{{ step0 }}" />
+{{ previous_fields|safe }}
+<br /><br />
+<input type="submit" value="Submit and continue" />
+</form>
+
+
+{% endblock %}

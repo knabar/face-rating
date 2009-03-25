@@ -1,0 +1,30 @@
+{% extends "master.html" %}
+{% block title %} - Instructions{% endblock %}
+
+{% block content %}
+
+<p align="center"><b>Face Rating 
+Study 1</b> <br></p> 
+<p align="center">Instructions <br> 
+</p> 
+<p>There are three parts to this 
+study. <br></p> 
+<p>In Part 1, you will be rating 
+a series of faces based on how prototypical you think the faces are 
+of Asian American faces. This part of the study should take about 5-15 
+minutes. <br></p> 
+<p>In Part 2, you will be rating 
+pairs of faces in terms of how similar you think the faces appear to 
+be to each other. This part of the study should take about 5-15 minutes. <br> 
+</p> 
+<p>In Part 3, we will ask you 
+to tell us what information you used to make your judgments. This part 
+of the study should last about 5 minutes. <br></p> 
+<p>Finally, we will ask for some 
+of your demographic information, after which we will debrief you about 
+the project. You will be provided some email addresses if you have further 
+questions about the study. <br></p> 
+
+<p><a href="{% url login %}?next={% url part1intro %}">NEXT &gt;&gt;</a></p>
+ 
+{% endblock %}

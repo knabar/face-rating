@@ -1,0 +1,145 @@
+{% extends "master.html" %}
+{% block title %} - Demographics Questionnaire{% endblock %}
+
+{% block style %}
+td {
+    vertical-align: top;
+}
+.required {
+    color: red;
+}
+textarea {
+    display: block;
+    width: 500px;
+    height: 150px;
+}
+td:first-child {
+    width: 400px;
+}
+li {
+    list-style-type: none;
+    margin-left: -40px;
+}
+td {
+    padding: 10px 0px;
+    border-bottom: solid thin gray;
+}
+{% endblock %}
+
+{% block content %}
+
+<h1>Demographics Questionnaire</h1>
+
+{{ form.errors }}
+
+<form action="" method="POST">
+<table>
+<tr{% if form.age.errors %} class="required"{% endif %}>
+    <td>1. {{ form.age.label }}</td>
+    <td>{{ form.age }}</td>
+</tr>
+<tr{% if form.sex.errors %} class="required"{% endif %}>
+    <td>2. {{ form.sex.label }}</td>
+    <td>{{ form.sex }}</td>
+</tr>
+<tr{% if form.birthplace.errors %} class="required"{% endif %}>
+    <td>3. {{ form.birthplace.label }}</td>
+    <td>{{ form.birthplace }}</td>
+</tr>
+<tr{% if form.lived_in_us.errors %} class="required"{% endif %}>
+    <td>4. {{ form.lived_in_us.label }}</td>
+    <td>{{ form.lived_in_us }}</td>
+</tr>
+<tr{% if form.hometown_street.errors or form.hometown_city_state.errors or form.hometown_zip_code.errors or form.hometown_not_us.errors %} class="required"{% endif %}>
+    <td>10. What do you consider your hometown, and what is the street address where you lived?</td>
+    <td>{{ form.hometown_street.label }} {{ form.hometown_street }}<br />
+        {{ form.hometown_city_state.label }} {{ form.hometown_city_state }}<br />
+<!--        {{ form.hometown_zip_code.label }} {{ form.hometown_zip_code }}<br />-->
+        {{ form.hometown_not_us.label }} {{ form.hometown_not_us }}    
+    </td>
+</tr>
+<tr{% if form.adopted.errors %} class="required"{% endif %}>
+    <td>5. {{ form.adopted.label }}</td>
+    <td>{{ form.adopted }}</td>
+</tr>
+<tr{% if form.background.errors or form.background_other.errors %} class="required"{% endif %}>
+    <td>6. {{ form.background.label }}</td>
+    <td>{{ form.background }}
+        Other: {{ form.background_other }}</td>
+</tr>
+<tr{% if form.background_mother.errors or form.background_father.errors %} class="required"{% endif %}>
+    <td>7. What are the ethnic backgrounds of your parents? (If adopted, your adoptive parents.) </td>
+    <td>{{ form.background_mother.label }} {{ form.background_mother }}<br />
+        {{ form.background_father.label }} {{ form.background_father }}</td>
+</tr>
+<tr{% if form.generation_status.errors or form.generation_status_other.errors %} class="required"{% endif %}>
+    <td>8. {{ form.generation_status.label }}</td>
+    <td>{{ form.generation_status }}<br />
+        Other: {{ form.generation_status_other }}</td>
+</tr>
+<tr{% if form.locations.errors %} class="required"{% endif %}>
+    <td>9. {{ form.locations.label }}<br /><br /><strong>Example:</strong><br />
+        <i>Birth - 9 Montreal, Canada<br />
+        Age 9 - 18 Chicago, IL<br />
+        18 - present Champaign, IL</i></td>
+    <td>{{ form.locations }}</td>
+</tr>
+<tr{% if form.religion.errors %} class="required"{% endif %}>
+    <td>11. {{ form.religion.label }}</td>
+    <td>{{ form.religion }}</td>
+</tr>
+<!--<tr{% if form.religion_community.errors or form.religion_community_ethnic.errors %} class="required"{% endif %}>
+    <td>12. {{ form.religion_community.label }}<br />
+        {{ form.religion_community_ethnic.label }}</td>
+    <td>{{ form.religion_community }}<br />
+        {{ form.religion_community_ethnic }}</td>
+</tr>-->
+<tr{% if form.friends.errors %} class="required"{% endif %}>
+    <td>13. {{ form.friends.label }}</td>
+    <td>{{ form.friends }}</td>
+</tr>
+<tr{% if form.friends_asian.errors or form.friends_black.errors or form.friends_white.errors or form.friends_latino.errors or form.friends_native_american.errors or form.friends_bi_asian.errors or form.friends_bi_nonasian.errors %} class="required"{% endif %}>
+    <td>14. Please list the percentage of close friends you have in each category. Make sure your total adds to 100%.
+    Please enter a 0 in the categories where you have no friends from the racial background listed.</td>
+    <td>{{ form.friends_asian }} {{ form.friends_asian.label }}<br />
+        {{ form.friends_black }} {{ form.friends_black.label }}<br />
+        {{ form.friends_white }} {{ form.friends_white.label }}<br />
+        {{ form.friends_latino }} {{ form.friends_latino.label }}<br />
+        {{ form.friends_native_american }} {{ form.friends_native_american.label }}<br />
+        {{ form.friends_bi_asian }} {{ form.friends_bi_asian.label }}<br />
+        {{ form.friends_bi_nonasian }} {{ form.friends_bi_nonasian.label }}
+    </td>
+</tr>
+<tr{% if form.partners.errors %} class="required"{% endif %}>
+    <td>15. {{ form.partners.label }}</td>
+    <td>{{ form.partners }}</td>
+</tr>
+<tr{% if form.partners_asian.errors or form.partners_black.errors or form.partners_white.errors or form.partners_latino.errors or form.partners_native_american.errors or form.partners_bi_asian.errors or form.partners_bi_nonasian.errors %} class="required"{% endif %}>
+    <td>16. Please list the percentage of past/current romantic partners you have in each category. Make sure your total adds to 100%.
+    Please enter a 0 in the categories where you have no friends from the racial background listed.</td>
+    <td>{{ form.partners_asian }} {{ form.partners_asian.label }}<br />
+        {{ form.partners_black }} {{ form.partners_black.label }}<br />
+        {{ form.partners_white }} {{ form.partners_white.label }}<br />
+        {{ form.partners_latino }} {{ form.partners_latino.label }}<br />
+        {{ form.partners_native_american }} {{ form.partners_native_american.label }}<br />
+        {{ form.partners_bi_asian }} {{ form.partners_bi_asian.label }}<br />
+        {{ form.partners_bi_nonasian }} {{ form.partners_bi_nonasian.label }}</td>
+</tr>
+
+<tr{% if form.courses.errors %} class="required"{% endif %}>
+    <td>17. {{ form.courses.label }}</td>
+    <td>{{ form.courses }}</td>
+</tr>
+<!--<tr{% if form.courses_identity.errors %} class="required"{% endif %}>
+    <td>18. {{ form.courses_identity.label }}</td>
+    <td>{{ form.courses_identity }}</td>
+</tr>-->
+</table>
+
+<p>
+<input type="submit" value="Submit and continue" />
+</p>
+
+</form>
+
+{% endblock %}

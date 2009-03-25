@@ -1,0 +1,138 @@
+{% extends "master.html" %}
+{% block style %}
+body {
+    background-color: #EFFFEF;
+}
+
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Times;
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times","serif";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:"Times","serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+
+{% endblock %}
+{% block title %} - Debriefing Form{% endblock %}
+
+{% block content %}
+
+<div class=Section1>
+
+<p class=MsoTitle><span style='font-family:"Arial","sans-serif"'>Face Rating
+Study 1: Debriefing Form</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-family:"Arial","sans-serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>The study
+that you just participated in can help researchers understand the extent to
+which meaning is ascribed to facial features in Asian Americans:</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Do certain
+     facial characteristics and the general "look" of Asian Americans influence
+     how people view them?   We wanted to know whether certain regions in Asia
+     are viewed as more prototypical than others that are still classified as
+     Asian; for example, do people see East Asians such as people of Korean,
+     Japanese, and Chinese descent as being <i>more</i> Asian? What other
+     facial characteristics most influence how people perceive the construct of
+     race in Asian Americans: eye shape, eyeglasses, hairstyle, skin color? </span></li>
+</ol>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<ol style='margin-top:0in' start=2 type=1>
+ <li class=MsoNormal><span style='font-family:"Arial","sans-serif"'>We also
+     wanted to know whether certain phenotypic features put people at risk for
+     being stereotyped or influences self-esteem at the individual level.
+     Collective judgments about facial features in Asian Americans might be
+     related to a person's racial identity and self-esteem. For example, if you
+     judge somebody as "more" Asian because they have a more stereotypical
+     look, how much does that influence the identity or self-esteem of the
+     person you are observing? </span></li>
+</ol>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Several
+studies found that certain characteristics in Asian Americans can lead to
+discrimination or misjudgment from others. For example, certain facial features
+or characteristics may be related to people's experiences of feeling more like
+they are part of an ingroup (Waldzus, Mummendey, &amp; Wenzel, 2004).  According
+to Morera, Dupont, Leyens, and Desert (2004), certain pieces of face-related
+information may be related to discrimination encountered by a target group. </span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>Now that you
+have been informed about the purpose of this study, if you have any question
+please contact the supervisor, Dr. Matthew Lee at <a href="mailto:leemr@jmu.edu">leemr@jmu.edu</a>. 
+You may also contact JMU's Institutional Review Board for questions about your
+rights as a participant by emailing the committee chair of the IRB, David
+Cockley at <a href="mailto:cocklede@jmu.edu">cocklede@jmu.edu</a>.  Please tell
+your friends about this interesting study and send an email to Dr. Lee at the
+email address above so they can participate as well! Thank you for your
+participation.  </span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-family:"Arial","sans-serif"'>References</span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><span
+style='font-family:"Arial","sans-serif"'>Morera, M.D., Dupont, E., Leyens, J.,
+&amp; Desert, M. (2004). When prototypicality makes 'maybes' look more certain:
+Another look at targets' vigilance toward prejudice cues. <i>European Journal
+of Social Psychology, 34, </i>437-457.</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.5in'><span
+style='font-family:"Arial","sans-serif"'>Waldzus, S., Mummendey, A., &amp;
+Wenzel, M. (2005). When "different" means "worse": Ingroup prototypicality in
+changing intergroup contexts. <i>Journal of Experimental Social Psychology, 41,
+</i>76-83.</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial","sans-serif"'>&nbsp;</span></p>
+
+<form action="{% url intro %}" method="get">
+    <center>
+      <input type="submit" value="Please click on this button to confirm you have read this debriefing and that you have completed this study." />
+    </center>
+</form>
+
+</div>
+
+{% endblock %}

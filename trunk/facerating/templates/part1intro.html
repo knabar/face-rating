@@ -1,0 +1,89 @@
+{% extends "master.html" %}
+{% block title %} - Part 1 Introduction{% endblock %}
+{% block content %}
+
+  <p align="center"><b>Part 1</b> <br> 
+</p> 
+<p>      For 
+this first part of the study you will be rating the <b><u>PROTOTYPICALITY</u></b> 
+of different faces. Webster's Dictionary defines a prototype as a 
+"<i>standard or typical example</i>." For example, if you were asked 
+to rate the prototypicality of the following <u>bird</u> to the category 
+"<u>birds</u>," you might fill out these ratings: <br> 
+</p> 
+<p align="center"><a name="0.2_graphic08"></a><center> 
+<img src="{% url static "images/sample-bird.jpg" %}" height="73" width="96" alt="Your browser may not support display of this image."></center> 
+</p> 
+<a name="0.2_table01"></a> 
+<div align="left"> 
+<table width="590" border="2" cellspacing="0" align="center"> 
+<tr valign="top"><td><b>Low 
+  prototypicality   &nbsp;&nbsp;      0  &nbsp;&nbsp;  1     &nbsp;&nbsp;
+  2  &nbsp;&nbsp;  3   &nbsp;&nbsp; 4  &nbsp;&nbsp;  5    &nbsp;&nbsp;
+  6  &nbsp;&nbsp;  <span style="background-color: black; color: white; padding: 0 5px;">7</span> &nbsp;&nbsp;   8    &nbsp;&nbsp;
+  9       &nbsp;&nbsp;  High prototypicality</b></td></tr> 
+</table> 
+</div> 
+<p>Therefore, this rater thinks 
+the bird is highly prototypical ("7") of other birds. <br></p> 
+<p align="center"><a name="0.2_graphic09"></a><center> 
+<img src="{% url static "images/sample-giraffe.jpg" %}" height="99" width="74" alt="Your browser may not support display of this image."></center> 
+</p> 
+<a name="0.2_table02"></a> 
+<div align="left"> 
+<table width="590" border="2" cellspacing="0" align="center"> 
+<tr valign="top"><td><b>Low 
+  prototypicality   &nbsp;&nbsp;      <span style="background-color: black; color: white; padding: 0 5px;">0</span>  &nbsp;&nbsp;  1     &nbsp;&nbsp;
+  2  &nbsp;&nbsp;  3   &nbsp;&nbsp; 4  &nbsp;&nbsp;  5    &nbsp;&nbsp;
+  6 &nbsp;&nbsp;  7 &nbsp;&nbsp;   8    &nbsp;&nbsp;
+  9       &nbsp;&nbsp;  High prototypicality</b></td></tr> 
+</table> 
+</div> 
+<p>The rater has determined that 
+the animal is this photo is NOT prototypical at all of other birds ("0").  A very low
+rating indicates the rater thinks this is a very poor example of the category of "birds."<br> 
+</p> 
+<p>      In 
+this study, the objects you will be rating are faces, and you will be 
+rating how prototypical the faces are of the category "Asian Americans." 
+The definition of the category "Asian Americans" refers to Americans 
+of Asian descent, meaning persons who have some aspect of their biological 
+heritage from one or more nations in the continent of Asia (U.S. Census, 
+2007). </p> 
+<p>      In 
+Part I, your ratings should reflect how "Asian American" you think 
+each face is based on whichever criteria you use to judge the faces. </p> 
+<p>      For 
+example, if a rater was presented with the following face,</p> 
+<p align="center"><a name="0.2_graphic0A"></a><center> 
+<img src="{% url static "images/sample-face.jpg" %}" height="113" width="78" alt="Your browser may not support display of this image."></center> 
+</p> 
+<a name="0.2_table03"></a> 
+<div align="left"> 
+<table width="590" border="2" cellspacing="0" align="center"> 
+<tr valign="top"><td><b>Low 
+  prototypicality   &nbsp;&nbsp;      0  &nbsp;&nbsp;  1     &nbsp;&nbsp;
+  2  &nbsp;&nbsp;  3   &nbsp;&nbsp; 4  &nbsp;&nbsp;  5    &nbsp;&nbsp;
+  6  &nbsp;&nbsp;  <span style="background-color: black; color: white; padding: 0 5px;">7</span> &nbsp;&nbsp;   8    &nbsp;&nbsp;
+  9       &nbsp;&nbsp;  High prototypicality</b></td></tr> 
+</table> 
+</div> 
+<p>      The 
+rater's "7" rating indicates that they think this face is highly 
+prototypical of other Asian Americans. <br> <br> 
+</p> 
+<p>      In 
+Part I, simply look at the faces for a short time, and select the numbers 
+that correspond to the degree of Asian American prototypicality of each 
+face. DO NOT ask your friends or family to help you with your ratings. 
+The ratings should come directly from your own analysis of the photographs. 
+We are interested in your subjective impression of prototypicality. 
+Different faces will have different impressions. Hence, there are no 
+correct or incorrect answers, but you should respond as honestly and 
+as accurately as possible. <br></p> 
+
+<form action="{% url part1 %}" method="get">
+    <input type="submit" value="Start" />
+</form>
+
+{% endblock %}
