@@ -1,0 +1,61 @@
+{% extends "master.html" %}
+{% block title %} - Part 2 Introduction{% endblock %}
+{% block content %}
+
+<p align="center"><b> 
+Part 2</b> <br></p> 
+<p>      For 
+this part of the study, you will be presented with pairs of faces, many 
+of which you may have already seen. You will be asked how similar you 
+think the faces look to <u>each other</u>. Once again, there are not 
+right or wrong answers, and the ratings should come directly from your 
+own analysis.</p> 
+<p>      Imagine 
+a rater was presented with these two faces: <br></p> 
+<p align="center"><a name="0.2_graphic0B"></a><center> 
+<img src="{% url static "images/sample-face.jpg" %}" height="113" width="78" alt="Your browser may not support display of this image."></center> 
+<a name="0.2_graphic0C"></a><center> 
+<img src="{% url static "images/sample-face2.jpg" %}" height="113" width="89" alt="Your browser may not support display of this image."></center> 
+ <br></p> 
+<a name="0.2_table04"></a> 
+<div align="left"> 
+<table width="590" border="2" cellspacing="0" align="center"> 
+<tr valign="top"><td><b>Low 
+  similarity         &nbsp;&nbsp;      0  &nbsp;&nbsp;  1     &nbsp;&nbsp;
+  2  &nbsp;&nbsp;  3   &nbsp;&nbsp; 4  &nbsp;&nbsp;  5    &nbsp;&nbsp;
+  6  &nbsp;&nbsp;  <span style="background-color: black; color: white; padding: 0 5px;">7</span> &nbsp;&nbsp;   8    &nbsp;&nbsp;
+  9       &nbsp;&nbsp;    High similarity</b></td></tr> 
+</table> 
+</div> 
+<p>      A 
+rating of "7" would mean this rater thinks the two people look highly 
+similar. <br></p> 
+<p>      Now, 
+imagine a rater was presented with these two faces. <br> 
+</p> 
+<p align="center"><a name="0.2_graphic0D"></a><center> 
+<img src="{% url static "images/sample-face3.jpg" %}" height="114" width="95" alt="Your browser may not support display of this image."></center> 
+<a name="0.2_graphic0E"></a><center> 
+<img src="{% url static "images/sample-face4.jpg" %}" height="113" width="78" alt="Your browser may not support display of this image."></center> 
+</p> 
+<a name="0.2_table05"></a> 
+<div align="left"> 
+<table width="590" border="2" cellspacing="0" align="center"> 
+<tr valign="top"><td><b>Low 
+  similarity         &nbsp;&nbsp;      0  &nbsp;&nbsp;  1     &nbsp;&nbsp;
+  <span style="background-color: black; color: white; padding: 0 5px;">2</span>  &nbsp;&nbsp;  3   &nbsp;&nbsp; 4  &nbsp;&nbsp;  5    &nbsp;&nbsp;
+  6  &nbsp;&nbsp; 7  &nbsp;&nbsp;   8    &nbsp;&nbsp;
+  9       &nbsp;&nbsp;   
+  High similarity</b></td></tr> 
+</table> 
+</div> 
+<p>      The 
+rater has determined that the people in this pair of photos are not 
+very similar and has rated their similarity level a "2." <br> 
+</p> 
+
+<form action="{% url part2 %}" method="get">
+    <input type="submit" value="Start" />
+</form>
+
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends "master.html" %}
+{% block title %} - Part 3{% endblock %}
+
+{% block style %}
+td {
+    vertical-align: top;
+}
+.required {
+    color: red;
+}
+textarea {
+    display: block;
+    width: 600px;
+    height: 80px;
+}
+td:first-child {
+    width: 400px;
+}
+li {
+    list-style-type: none;
+    margin-left: -40px;
+}
+td {
+    padding: 10px 0px;
+    border-bottom: solid thin gray;
+}
+td.noline {
+    border-bottom: none;
+}
+{% endblock %}
+
+{% block content %}
+
+<h1>Part 3</h1>
+
+<p>Now we would like you to reflect on the kinds of information you used to make
+your ratings in the first two parts of this study. We have four short questions
+that we would like you to answer. These questions are asking about how you rated
+how <u>Asian American</u> the faces were, not how attractive they were. </p>
+
+<form action="" method="POST">
+
+<table>
+<tr{% if form.q1.errors %} class="required"{% endif %}>
+    <td>Question 1. {{ form.q1.label }}</td>
+    <td>{{ form.q1 }}</td>
+</tr>
+<tr{% if form.q2.errors %} class="required"{% endif %}>
+    <td>Question 2. {{ form.q2.label }}</td>
+    <td>{{ form.q2 }}</td>
+</tr>
+<tr{% if form.q3.errors %} class="required"{% endif %}>
+    <td>Question 3. {{ form.q3.label }}</td>
+    <td>{{ form.q3 }}<br />
+        {{ form.q3other }}</td>
+</tr>
+<tr>
+    <td colspan="2" class="noline">
+        Question 4. Based on the previous lists of items in Question 3, please rank the 5 criteria you used most often, or were most important to you in terms of making your ratings. The criterion you list as no. 1 is what you consider the most important
+    </td>
+</tr>
+<tr{% if form.q4a.errors %} class="required"{% endif %}>
+    <td class="noline">{{ form.q4a.label }}</td>
+    <td class="noline">{{ form.q4a }}</td>
+</tr>
+<tr{% if form.q4b.errors %} class="required"{% endif %}>
+    <td class="noline">{{ form.q4b.label }}</td>
+    <td class="noline">{{ form.q4b }}</td>
+</tr>
+<tr{% if form.q4c.errors %} class="required"{% endif %}>
+    <td class="noline">{{ form.q4c.label }}</td>
+    <td class="noline">{{ form.q4c }}</td>
+</tr>
+<tr{% if form.q4d.errors %} class="required"{% endif %}>
+    <td class="noline">{{ form.q4d.label }}</td>
+    <td class="noline">{{ form.q4d }}</td>
+</tr>
+<tr{% if form.q4e.errors %} class="required"{% endif %}>
+    <td>{{ form.q4e.label }}</td>
+    <td>{{ form.q4e }}</td>
+</tr>
+<tr{% if form.q5.errors %} class="required"{% endif %}>
+    <td>Question 5. {{ form.q5.label }}</td>
+    <td>{{ form.q5 }}</td>
+</tr>
+</table>
+
+<p>
+<input type="submit" value="Submit and continue" />
+</p>
+
+</form>
+
+{% endblock %}

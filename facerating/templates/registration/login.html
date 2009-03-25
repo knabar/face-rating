@@ -1,0 +1,25 @@
+{% extends "master.html" %}
+
+{% block content %}
+
+{% if form.errors %}
+    <p style="color: red;">Sorry, that's not a valid user name, password, or access code.</p>
+{% endif %}
+
+<h1>Login</h1>
+
+<form action="" method="post">
+
+    <label for="username">User name:</label>
+    <input type="text" name="username" value="" id="username" /><br />
+    <label for="password">Password:</label>
+    <input type="password" name="password" value="" id="password" /><br />
+    <label for="code">Access code:</label>
+    <input type="text" name="code" value="" id="code" />
+    
+    <input type="submit" value="login" />
+    <input type="hidden" name="next" value="{{ next|escape }}" />
+    
+</form>
+
+{% endblock %}

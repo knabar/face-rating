@@ -1,0 +1,68 @@
+{% extends "master.html" %}
+{% block title %} - Part 1{% endblock %}
+
+{% block style %}
+li {
+    float: left;
+    list-style-type: none;
+    padding-right: 10px;
+}
+li+li {
+    border-left: solid 1px gray;
+    padding-left: 10px;
+}
+.required {
+    color: red;
+}
+label {
+    font-size: xx-large;
+}
+img {
+	height: 200px;
+}
+{% endblock %}
+
+{% block content %}
+
+<h1>Part 1</h1>
+
+<p>For each face, provide a numerical ranking on the number scales below each face
+that describe one particular quality or dimension. Remember, high ratings mean
+you think the person in the photo greatly possesses the quality listed, and low
+ratings mean you think the person does not. Try not to overthink your ratings.</p>
+
+<p>Step {{ step }} of {{ step_count }}</p>
+<form action="." method="post">
+<table>
+    <tr>
+        <th colspan="2">{{ form.i }}</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th><div style="float: right;">Higher</div><div style="float: left;">Lower</div></th>
+    </tr>
+    <tr{% if form.p1.errors %} class="required"{% endif %}>
+        <td>{{ form.p1.label }}</td>
+        <td>{{ form.p1 }}</td>
+    </tr>
+<!--    <tr{% if form.a.errors %} class="required"{% endif %}>
+        <td>{{ form.a.label }}</td>
+        <td>{{ form.a }}</td>
+    </tr>
+    <tr{% if form.p2.errors %} class="required"{% endif %}>
+        <td>{{ form.p2.label }}</td>
+        <td>{{ form.p2 }}</td>
+    </tr>
+    <tr{% if form.p3.errors %} class="required"{% endif %}>
+        <td>{{ form.p3.label }}</td>
+        <td>{{ form.p3 }}</td>
+    </tr>    -->
+</table>
+<input type="hidden" name="{{ step_field }}" value="{{ step0 }}" />
+{{ previous_fields|safe }}
+<br /><br />
+<input type="submit" value="Submit and continue" />
+</form>
+
+
+{% endblock %}
