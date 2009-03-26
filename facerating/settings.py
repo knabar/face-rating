@@ -92,3 +92,6 @@ AUTHENTICATION_BACKENDS = (
 SSL_PORT = ':8443'
 
 LOGIN_URL = '/facerating/accounts/login/'
+
+PART1COUNT = 15
+PART2COUNT = 15

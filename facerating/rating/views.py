@@ -224,7 +224,7 @@ def download_csvs(request):
             background = d.background.all().values_list('id', flat=True)
             r = r + map(lambda i: i[0] in background and i[1], rb)
             r = r + [d.background_other, d.background_mother, d.background_father, d.generation_status,
-                     d.locations, d.hometown_street, d.hometown_city_state, 
+                     d.hometown_street, d.hometown_city_state, 
                      d.hometown_not_us, d.religion,
                      d.friends, d.friends_asian, d.friends_black, d.friends_white, d.friends_latino,
                      d.friends_native_american, d.friends_bi_asian, d.friends_bi_nonasian, d.partners,
@@ -243,7 +243,7 @@ def download_csvs(request):
     add_file("demographics.csv",
              "Submission User Age Sex Birthplace LivedInUS Adopted".split() +
              map(lambda i: i[1], rb) +
-             "Other Mother Father Generation Locations Street CityState NotUS \
+             "Other Mother Father Generation Street CityState NotUS \
              Religion Friends FriendsAsian FriendsBlack FriendsWhite FriendsLatino \
              FriendsNativeAmerican FriendsBiAsian FriendsBiNonAsian Partners PartnersAsian \
              PartnersBlack PartnersWhite PartnersLatino PartnersNativeAmerican PartnersBiAsian \
