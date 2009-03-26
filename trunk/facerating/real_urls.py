@@ -4,6 +4,7 @@ from django.contrib import admin
 from rating.views import *
 from rating.forms import Part1Wizard, Part2Wizard
 from django.contrib.auth.views import logout
+from django.conf import settings
 
 admin.autodiscover()
 
@@ -16,8 +17,8 @@ urlpatterns = patterns('',
     url(r'^part2/intro/', direct_to_template, {'template': 'part2intro.html'}, name='part2intro'),
     
     url(r'^$', intro, name='intro'),
-    url(r'^part1/', Part1Wizard(25), name='part1'),  # use 1000 to get all
-    url(r'^part2/', Part2Wizard(25), name='part2'),  # use 50
+    url(r'^part1/', Part1Wizard(settings.PART1COUNT), name='part1'),  
+    url(r'^part2/', Part2Wizard(settings.PART2COUNT), name='part2'),  
     url(r'^part3/', part3, name='part3'),
     url(r'^part4/', part4, name='part4'),
     url(r'^debrief/', direct_to_template, {'template': 'debrief.html'}, name='debrief'),

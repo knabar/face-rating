@@ -60,12 +60,13 @@ class FeaturesCriteria(models.Model):
             return self.criteria
     
     def _group_title(self):
-        if self.group == 'f':
-            return 'Facial features criteria'
-        elif self.group == 'o':
-            return 'Other commonly used criteria'
-        else:
-            return None;
+        return None
+        #if self.group == 'f':
+        #    return 'Facial features criteria'
+        #elif self.group == 'o':
+        #    return 'Other commonly used criteria'
+        #else:
+        #    return None;
             
     
     
@@ -128,11 +129,11 @@ class Demographics(models.Model):
     background_father = models.CharField(verbose_name='Father', max_length=100)
     generation_status = models.CharField(verbose_name='What is your generation status?', max_length=10, choices=GENERATION_CHOICES)
     generation_status_other = models.CharField(verbose_name='Other', max_length=100, blank=True)    
-    locations = models.TextField(verbose_name='Please list all the different locations you have lived in at different ages (not including travels):')
+#    locations = models.TextField(verbose_name='Please list all the different locations you have lived in at different ages (not including travels):')
     hometown_street = models.CharField(verbose_name='Street', max_length=100)
     hometown_city_state = models.CharField(verbose_name='City/State', max_length=100)
 #    hometown_zip_code = models.CharField(verbose_name='Zip Code', max_length=100)
-    hometown_not_us = models.CharField(verbose_name='If not US, please state', max_length=100, blank=True)
+    hometown_not_us = models.CharField(verbose_name='If not US, please state home country', max_length=100, blank=True)
     religion = models.CharField(verbose_name='What is your religious background?', max_length=20, choices=RELIGION_CHOICES)
 #    religion_community = models.BooleanField(verbose_name='Do you consider yourself part of a religious community (e.g., church, mosque, temple)?')
 #    religion_community_ethnic = models.CharField(blank=True, max_length=100, verbose_name='If yes, what specific ethnic group does the community cater to?')
