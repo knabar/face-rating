@@ -900,12 +900,12 @@
       "criteria": "Whether or not the person wore a headband or headscarf"
     }
   },
-    {
+  {
     "pk": 23,
     "model": "rating.featurescriteria",
     "fields": {
-      "group": "o",
-      "criteria": "Illumination (brightness) of the photo"
+      "group": "f",
+      "criteria": "Perceived ethnicity of the target faces"
     }
   },
   {
@@ -913,7 +913,7 @@
     "model": "rating.featurescriteria",
     "fields": {
       "group": "o",
-      "criteria": "Gender of the person in the photo"
+      "criteria": "Illumination (brightness) of the photo"
     }
   },
   {
@@ -921,7 +921,7 @@
     "model": "rating.featurescriteria",
     "fields": {
       "group": "o",
-      "criteria": "How old you think the person is"
+      "criteria": "Gender of the person in the photo"
     }
   },
   {
@@ -929,7 +929,7 @@
     "model": "rating.featurescriteria",
     "fields": {
       "group": "o",
-      "criteria": "How the faces looked compared to Asian American people/friends you know"
+      "criteria": "How old you think the person is"
     }
   },
   {
@@ -937,7 +937,7 @@
     "model": "rating.featurescriteria",
     "fields": {
       "group": "o",
-      "criteria": "How the faces looked compared to Asian Americans you have seen in the media"
+      "criteria": "How the faces looked compared to Asian American people/friends you know"
     }
   },
   {
@@ -945,7 +945,7 @@
     "model": "rating.featurescriteria",
     "fields": {
       "group": "o",
-      "criteria": "How these faces looked compared to Asian Americans you have dated"
+      "criteria": "How the faces looked compared to Asian Americans you have seen in the media"
     }
   },
   {
@@ -953,7 +953,7 @@
     "model": "rating.featurescriteria",
     "fields": {
       "group": "o",
-      "criteria": "How much the faces looked like you"
+      "criteria": "How these faces looked compared to Asian Americans you have dated"
     }
   },
   {
@@ -961,7 +961,7 @@
     "model": "rating.featurescriteria",
     "fields": {
       "group": "o",
-      "criteria": "How many Asian Americans lived in your neighborhood"
+      "criteria": "How much the faces looked like you"
     }
   },
   {
@@ -969,7 +969,7 @@
     "model": "rating.featurescriteria",
     "fields": {
       "group": "o",
-      "criteria": "How many Asian Americans attended the schools you attended"
+      "criteria": "How many Asian Americans lived in your neighborhood"
     }
   },
   {
@@ -977,7 +977,7 @@
     "model": "rating.featurescriteria",
     "fields": {
       "group": "o",
-      "criteria": "How racially segregated your hometown neighborhood was"
+      "criteria": "How many Asian Americans attended the schools you attended"
     }
   },
   {
@@ -985,7 +985,7 @@
     "model": "rating.featurescriteria",
     "fields": {
       "group": "o",
-      "criteria": "What your parents told you a prototypical \"Asian American\" looked like"
+      "criteria": "How racially segregated your hometown neighborhood was"
     }
   },
   {
@@ -993,7 +993,7 @@
     "model": "rating.featurescriteria",
     "fields": {
       "group": "o",
-      "criteria": "What your friends told you a prototypical \"Asian American\" looked like"
+      "criteria": "What your parents told you a prototypical \"Asian American\" looked like"
     }
   },
   {
@@ -1001,11 +1001,19 @@
     "model": "rating.featurescriteria",
     "fields": {
       "group": "o",
-      "criteria": "What textbooks have told you a prototypical \"Asian American\" looked like"
+      "criteria": "What your friends told you a prototypical \"Asian American\" looked like"
     }
   },
   {
     "pk": 36,
+    "model": "rating.featurescriteria",
+    "fields": {
+      "group": "o",
+      "criteria": "What textbooks have told you a prototypical \"Asian American\" looked like"
+    }
+  },
+  {
+    "pk": 37,
     "model": "rating.featurescriteria",
     "fields": {
       "group": "x",
