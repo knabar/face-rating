@@ -224,8 +224,8 @@ def download_csvs(request):
             background = d.background.all().values_list('id', flat=True)
             r = r + map(lambda i: i[0] in background and i[1], rb)
             r = r + [d.background_other, d.background_mother, d.background_father, d.generation_status,
-                     d.hometown_street, d.hometown_city_state, 
-                     d.hometown_not_us, d.religion,
+#                     d.hometown_street, d.hometown_city_state, d.hometown_not_us,
+                     d.religion,
                      d.friends, d.friends_asian, d.friends_black, d.friends_white, d.friends_latino,
                      d.friends_native_american, d.friends_bi_asian, d.friends_bi_nonasian, d.partners,
                      d.partners_asian, d.partners_black, d.partners_white, d.partners_latino,
